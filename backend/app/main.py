@@ -29,7 +29,8 @@ app.add_middleware(
         ).split(",")
         if origin.strip()
     ],
-    allow_credentials=True,
+    allow_origin_regex=r"https://[-a-z0-9]+\.onrender\.com|http://localhost(:\d+)?",
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
