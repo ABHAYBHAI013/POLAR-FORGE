@@ -12,4 +12,7 @@ export default defineConfig({
       },
     },
   },
+  preview: {
+    allowedHosts: ['polar-logistics-frontend-qkd0.onrender.com'],
+  },
 })
