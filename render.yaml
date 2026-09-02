@@ -9,11 +9,11 @@ services:
       - key: FRONTEND_ORIGINS
         sync: false
 
-  - type: static
-    name: polar-logistics-frontend
+staticSites:
+  - name: polar-logistics-frontend
     rootDir: frontend
     buildCommand: npm ci && npm run build
-    staticPublishPath: dist
+    publishPath: dist
     envVars:
       - key: VITE_API_URL
         sync: false
